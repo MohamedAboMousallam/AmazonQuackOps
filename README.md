@@ -33,13 +33,20 @@ A command-line tool to generate DevOps configuration files (Dockerfiles, Terrafo
    cd devops-config-generator
    ```
 
-2. Install dependencies:
+2. Create a new environment:
+
+   ```bash
+   python3 -m venv test_env
+   source test_env/bin/activate
+   ```
+
+3. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Ensure Amazon Q CLI is available:
+4. Ensure Amazon Q CLI is available:
 
    ```bash
    q chat --help
@@ -134,4 +141,4 @@ You can use **multi-stage** mode to break generation into planning and execution
 4. **Formatting**: Optionally re-parses HCL2 or YAML for pretty output.
 5. **Saving**: Writes each block to its target filename, creating directories as needed.
 
-For more explainations. checkout the detailed Blog post at: 
+You can read the full blog post [here](https://dev.to/mohamed_abomosallam_52626/dev-productivity-unleashed-build-faster-with-this-amazon-q-cli-workflow-4h1m).
